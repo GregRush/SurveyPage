@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Oswald|Raleway');
+
+
+main {
+    background-color: #b0ebeb;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    padding: auto;
+}
+
+
+label,
+input {
+    margin: auto;
+    display: inline-block;
+    /* in order to define widths */
+
+}
+
+label {
+    width: 45%;
+    /* positions the label text beside the input */
+    text-align: right;
+}
+
+label + input {
+    width: 10%;
+    /* large margin-right to force the next element to the new-line
+       and margin-left to create a gutter between the label and input */
+    margin: 0 30% 0 4%;
+}
+
+label + select {
+    width: 20%;
+    /* large margin-right to force the next element to the new-line
+       and margin-left to create a gutter between the label and input */
+    margin: 0 10% 0 1%;
+}
+ 
+label + datalist {
+    width: 30%;
+/*
+     large margin-right to force the next element to the new-line
+       and margin-left to create a gutter between the label and input 
+*/
+    margin: 0 30% 0 4%;
+}
+
+label + textarea {
+    width: 30%;
+/*
+     large margin-right to force the next element to the new-line
+       and margin-left to create a gutter between the label and input 
+*/
+    margin: 0 10% 0 4%;
+}
+label + ul {
+    width: 145%;
+/*
+     large margin-right to force the next element to the new-line
+       and margin-left to create a gutter between the label and input 
+*/
+    margin: 0 30% 0 4%;
+}
+header {
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+    grid-area: t;
+/*    font-size: 10em;*/
+    
+
+    
+
+}
+
+#title {
+    font-size: 1em;
+}
+
+.inputBox {
+    height: 20px;
+    width: 48%;
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #c0c0c0;
+    border-radius: 2px;
+    vertical-align: middle;
+}
+
+form {
+    text-align: left;
+
+}
+
+.form {
+    background-color: bisque;
+    width: 70%;
+    grid-area: c;
+    position: relative;
+    margin: auto;
+    border: 10px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+
+}
+
+ul {
+    list-style: none;
+
+}
+
+.buttonS,
+.buttonR {
+    display: inline-block;
+}
+
+.buttonS {
+    background-color: #4b8abf;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    height: 40px;
+    width: 96px;
+    margin: 10px;
+    border: 0px solid;
+}
+
+.buttonR {
+    background-color: #59ace0;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    height: 40px;
+    width: 96px;
+    margin: 10px;
+    border: 0px solid;
+}
+
+.buttons {
+    text-align: center;
+}
+
+li {
+    position: relative;
+    left: 30%;
+    margin-left: 10px;
+    display: block;
+    padding-bottom: 10px;
+/*    vertical-align: middle;*/
+}

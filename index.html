@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <main>
+
+        <header>
+            <h1 id="title">Survey Form</h1></header>
+        <div class="form">
+            <p id="description">Just a few questions, your opinion is important to us!</p>
+            <form id="survey-form" method="get" action="">
+
+                <label id="name-label">*Name:</label>
+                <input type="text" name="name" placeholder="Enter your name" id="name" class="inputBox" maxlength="40" required>
+
+                <label id="email-label">*Email:</label>
+                <input class="inputBox" type="email" name="email" placeholder="Enter your email" id="email" required>
+
+                <label id="number-label">*Age:</label>
+                <input class="inputBox" type="number" name="age" min="1" max="80" id="number" required>
+
+                <label>Telephone:</label>
+                <input class="inputBox" type="tel">
+
+                <label>How long would you like to stay?</label>
+                <select name="howlong" id="howlong" id="dropdown">
+                    <option value="month">One month</option>
+                    <option value="15">Fifteen days</option>
+                    <option value="week">A week</option>
+                </select>
+
+                <label>How did you find out about us?</label>
+                <input list="sources" class="inputBox" name="source" placeholder="Please make a choice">
+                <datalist class="inputBox" id="sources">
+                    <option value="Internet">
+                    <option value="Newspaper">
+                    <option value="Radio">
+                    <option value="TV">
+                </datalist>
+
+                <label>What is your favorite color?</label>
+                <input type="color" class="inputBox">
+
+                <label>Would you like to come back?</label>
+                
+                <ul>
+                    <li><input type="radio" name="return" value="Definitely" checked>Definitely
+                    </li>
+                    <li>
+                        <input type="radio" name="return" value="No">No
+                    </li>
+                    <li>
+                        <input type="radio" name="return" value="Not sure">Not sure
+                    </li>
+                </ul>
+
+                <label>On which month do you take your vacation?</label>
+                <input type="month" class="inputBox">
+                <label>What is the date of your arrival?</label>
+                <input type="datetime-local" class="inputBox">
+
+                <label>You would need a place for how many people?</label>
+                <input type="range" name="pplInName" ID="pplInId" value="1" min="1" max="6">
+                
+                                                         
+                <label>You would like a place that is:</label>
+                <ul>
+                    <li>
+                        <input type="checkbox" name="beach" value="beach">Close to the beach
+                    </li>
+                    <li>
+                        <input type="checkbox" name="town" value="town">Close to the town
+                    </li>
+                    <li>
+                        <input type="checkbox" name="parking" value="parking">Parking available
+                    </li>
+                    <li>
+                        <input type="checkbox" name="space" value="space">Large open spaces
+                    </li>
+                    <li>
+                        <input type="checkbox" name="room" value="room">Spacious rooms
+                    </li>
+                </ul>
+                <label>Any Comments or suggestions?</label>
+
+                <textarea name="coments" rows="5" cols="40">Enter your comment here...</textarea>
+
+                <div class="buttons">
+                    <input type="submit" class="buttonS" value="Submit" id="submit">
+                    <input type="reset" class="buttonR" value="Reset">
+                </div>
+
+
+            </form>
+        </div>
+    </main>
+
+    <script src=""></script>
+</body>
+
+</html>
